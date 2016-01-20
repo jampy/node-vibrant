@@ -3,7 +3,6 @@ module.exports =
 class BrowserImage extends Image
   constructor: (path, cb) ->
     @img = document.createElement('img')
-    @img.crossOrigin = 'anonymous'
     @img.src = path
 
     @img.onload = =>
